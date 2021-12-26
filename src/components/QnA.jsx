@@ -44,8 +44,10 @@ function QnA(){
       <div className="QnA-box">
         {showScore? (
             <div className="score">
+
+            <h1>Hello {`${uname}!`} </h1>
+            <h1>Your Score is {score} / {questions.length}</h1>
             <p>{message}</p>
-            <h1>Hello {`${uname}!`} Your Score is {score} / {questions.length}</h1>
             <Link to="/QnA"> <Button class="button" click={handleReset} buttonText="Reset"/> </Link>
             <Link to="/quiz-app"> <Button class="button" click={handleReset} buttonText="Home"/> </Link>
             </div>):

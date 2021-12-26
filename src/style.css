@@ -58,7 +58,7 @@ form{
  width: 180px;
  height: 35px;
  letter-spacing: 0.06em;
- margin-bottom: 20px;
+ margin-bottom:20px;
  position: relative;
  font-size: 1.1rem;
  border-radius: 7px;
@@ -173,7 +173,9 @@ form{
   flex-direction: column;
   align-items: center;
 }
-
+.score p{
+  color:#E6E6E6;
+}
 /* ------------------------------Media---------------------------------------- */
 
 @media only screen and (max-width:425px) {
@@ -212,16 +214,13 @@ form{
   h1{
     text-align:center;
     font-size:1.5rem;
-    width: 260px;
+    margin: 4px;
   }
 }
 @media only screen and (max-width:375px) {
   .box{
     width:350px;
     height:600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .QnA-box{
     width:350px;
@@ -229,17 +228,11 @@ form{
     animation: startQuiz;
     animation-duration: 1s
   }
-
   @keyframes startQuiz{
     from {width:0;}
     to {width: 350px;}
   }
   .question-section,.answer-section{
    text-align:center;
-  }
-  h1{
-    text-align:center;
-    font-size:1.5rem;
-    width: 260px;
   }
 }
