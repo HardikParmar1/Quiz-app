@@ -48,7 +48,7 @@ function QnA(){
             <h1>Hello {`${uname}!`} </h1>
             <h1>Your Score is {score} / {questions.length}</h1>
             <p>{message}</p>
-            <Link to="/QnA"> <Button class="button" click={handleReset} buttonText="Reset"/> </Link>
+            <Link to="/QnA"> <Button class="button" click={handleReset} buttonText="Try Again"/> </Link>
             <Link to="/quiz-app"> <Button class="button" click={handleReset} buttonText="Home"/> </Link>
             </div>):
           (<div className="quiz">
